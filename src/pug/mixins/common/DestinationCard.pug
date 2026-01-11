@@ -1,12 +1,25 @@
 mixin DestinationCard(props)
   .col-md-3.mb-4.destination-item(class=props.category) 
-    .card.overflow-hidden.shadow 
-      img.card-img-top.w-100.destination-img.fit-cover(src=`${CWD}assets/img/dest/${props.img}`, alt=props.place)
-      .card-body.py-4.px-3 
-        .d-flex.flex-column.flex-lg-row.justify-content-between.mb-3 
-          h4.text-secondary.fw-medium
-            a.link-900.text-decoration-none.stretched-link(href=props.link || '#!')= props.place
-          span.fs-1.fw-medium= `$${props.cost}`
-        .d-flex.align-items-center 
-          img(src=`${CWD}assets/img/dest/navigation.svg`, style='margin-right: 14px' width='20' alt="navigation")
-          span.fs-0.fw-medium= props.trip
+    .card.overflow-hidden.shadow.h-100.border-0
+      .position-relative
+         img.card-img-top.w-100.destination-img.fit-cover(src=`${CWD}assets/img/dest/${props.img}`, alt=props.place)
+      .card-body.p-4.d-flex.flex-column
+         .mb-2
+            span.text-warning.fw-bold.fs--1= props.trip
+         h4.fw-bold.mb-2.text-1000.fs-2
+            a.text-decoration-none.link-900.stretched-link(href=props.link || '#!')= props.place
+         .mb-3.text-warning
+            i.fas.fa-star.me-1
+            i.fas.fa-star.me-1
+            i.fas.fa-star.me-1
+            i.fas.fa-star.me-1
+            i.fas.fa-star.me-1
+         .mt-auto.d-flex.align-items-center.justify-content-between
+             div
+                span.text-secondary.fs--1.d-block From
+                if props.cost
+                  span.fw-bold.fs-1.text-dark= `USD ${props.cost}`
+                else
+                  span.fw-bold.fs-0.text-dark Contact Us
+             div
+                a.btn.btn-warning.text-white.rounded-pill.px-3.fw-bold.fs--1(href=props.link || '#!' style="z-index: 2; position: relative;") Read More
