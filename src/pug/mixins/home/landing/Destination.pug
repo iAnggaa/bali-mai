@@ -1,0 +1,219 @@
+append variables
+  -
+    var destinations= [
+      {
+        place: 'Ubud Tour 1',
+        cost: '65',
+        trip: 'Full Day Tour',
+        img: 'ubud1.jpeg',
+        category: 'full-day',
+        link: 'ubud-tour-1.html'
+      },
+      {
+        place: 'Ubud Tour 2',
+        cost: '55',
+        trip: 'Full Day Tour',
+        img: 'ubud2.jpeg',
+        category: 'full-day',
+        link: 'ubud-tour-2.html'
+      },
+      {
+        place: 'Sunrise Tour',
+        cost: '50',
+        trip: 'Full Day Tour',
+        img: 'sunrise.jpeg',
+        category: 'full-day',
+        link: 'sunrise-tour.html'
+      },
+      {
+        place: 'Kintamani Tour',
+        cost: '75',
+        trip: 'Full Day Tour',
+        img: 'kintamani.jpg',
+        category: 'full-day',
+        link: 'kintamani-tour.html'
+      },
+      {
+        place: 'Bedugul Tour',
+        cost: '85',
+        trip: 'Full Day Tour',
+        img: 'bedugul.jpg',
+        category: 'full-day',
+        link: 'bedugul-tour.html'
+      },
+      {
+        place: 'Nusa Penida Tour',
+        cost: '80',
+        trip: 'Full Day Tour',
+        img: 'nusa.jpeg',
+        category: 'full-day',
+        link: 'nusa-penida-tour.html'
+      },
+      {
+        place: 'Gate Of Heaven',
+        cost: '90',
+        trip: 'Full Day Tour',
+        img: 'gateofheaven.jpeg',
+        category: 'full-day',
+        link: 'gate-of-heaven-tour.html'
+      },
+      {
+        place: 'Uluwatu Tour',
+        cost: '65',
+        trip: 'Full Day Tour',
+        img: 'uluwatu.jpg',
+        category: 'full-day',
+        link: 'uluwatu-tour.html'
+      },
+      {
+        place: 'Uluwatu Kecak',
+        cost: '35',
+        trip: 'Half Day Tour',
+        img: 'uluwatu_kecak.jpg',
+        category: 'half-day',
+        link: 'uluwatu-kecak-tour.html'
+      },
+      {
+        place: 'Tanah Lot Sunset',
+        cost: '40',
+        trip: 'Half Day Tour',
+        img: 'tanahlot_sunset.jpg',
+        category: 'half-day',
+        link: 'tanah-lot-sunset-tour.html'
+      },
+      {
+        place: 'Uluwatu Sunset',
+        cost: '34',
+        trip: 'Half Day Tour',
+        img: 'UluwatuSunsetTour.jpg',
+        category: 'half-day',
+        link: 'uluwatu-sunset-tour.html'
+      },
+      {
+        place: 'Ubud Half Day',
+        cost: '34',
+        trip: 'Half Day Tour',
+        img: 'ubud1.jpeg',
+        category: 'half-day',
+        link: 'ubud-half-day-tour.html'
+      },
+      {
+        place: 'Toya Devasya',
+        cost: '25',
+        trip: 'Activities Tour',
+        img: 'toyadevasya.jpg',
+        category: 'activity',
+        link: 'toya-devasya.html'
+      },
+      {
+        place: 'Bali Zoo',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'balizoo.jpg',
+        category: 'activity',
+        link: 'bali-zoo.html'
+      },
+      {
+        place: 'Bali Safari & Marine Park',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'balisafari.jpg',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'White River Rafting',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'ayungriver.jpg',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'ATV Quad Bike Adventure',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'atvquadbikeadventurebali.jpg',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'Cycling',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'balicyclingtour.jpg',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'Batur Trekking',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'baturtrekking.jpg',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'Elephant Ride',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'balielephantride.jpg',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'Watersport Activity',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'baliwatersporttanjungbenoa.jpg',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'Paragliding Tour',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'paraglidingbali',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'Bali Swing Tour',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'baliswing.jpg',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'Helicopter Tour',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'balihelicoptertour.avif',
+        category: 'activity',
+        link: '#!'
+      },
+      {
+        place: 'Dinner Cruise',
+        cost: '',
+        trip: 'Activities Tour',
+        img: 'balidinnercruise.jpg',
+        category: 'activity',
+        link: '#!'
+      }
+    ]
+
+mixin Destination 
+  +Section.pt-5#destination
+    .position-absolute.start-100.bottom-0.translate-middle-x.d-none.d-xl-block.ms-xl-n4
+      img(src=`${CWD}assets/img/dest/shape.svg`, alt="destination")
+    .mb-7.text-center 
+      +SectionTitle('Top Selling', 'Top Destinations')
+    .d-flex.justify-content-center.flex-wrap.mb-5.gap-3
+      button.btn.btn-secondary.px-4.active(type="button" data-filter="full-day") Full Day Tour
+      button.btn.btn-outline-secondary.px-4(type="button" data-filter="half-day") Half Day Tour
+      button.btn.btn-outline-secondary.px-4(type="button" data-filter="instagram") Instagram Tour
+      button.btn.btn-outline-secondary.px-4(type="button" data-filter="activity") Activity Tour
+    .row 
+      each val in destinations
+        +DestinationCard(val)

@@ -1,0 +1,354 @@
+extends layouts/LayoutTheme
+
+append variables
+  - var CWD = './'
+
+append footerStyles
+  style.
+    .navbar {
+      background-color: #fff !important;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    body {
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/img/dest/balizoo.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .nav-pills .nav-link.active {
+      background-color: #ffc107;
+      color: #000;
+      font-weight: bold;
+    }
+    .nav-pills .nav-link {
+        color: #6c757d;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+block content
+  section(style="margin-top: 250px;")
+    .container
+      .row
+        //- Main Content
+        .col-lg-8
+          //- Main Image
+          .mb-5
+             img.w-100.rounded-3(src=`${CWD}assets/img/dest/balizoo.jpg` alt="Bali Zoo")
+             
+          //- Header
+          h1.fw-bold.fs-3.fs-lg-5.mb-3 Bali Zoo
+          p.mb-4 Many tourists, both foreign (on average) and domestic tourists who visit here. In general, visitors to the Bali Zoo are family, but there are also many adults. Because playing at the Bali Zoo is quite exciting, it is not surprising that I visited here twice and invited friends who happened to be on vacation in Bali.
+
+          h5.text-danger.fw-bold.mb-4 Package Options
+
+          //- Tab Navigation
+          ul.nav.nav-pills.mb-4#pills-tab(role="tablist")
+            li.nav-item(role="presentation")
+               button.nav-link.active#pills-night-tab(data-bs-toggle="pill" data-bs-target="#pills-night" type="button" role="tab") Night at The Zoo
+            li.nav-item(role="presentation")
+               button.nav-link#pills-explorer-tab(data-bs-toggle="pill" data-bs-target="#pills-explorer" type="button" role="tab") Zoo Explorer
+            li.nav-item(role="presentation")
+               button.nav-link#pills-admission-tab(data-bs-toggle="pill" data-bs-target="#pills-admission" type="button" role="tab") Zoo Admission
+            li.nav-item(role="presentation")
+               button.nav-link#pills-mudfun-tab(data-bs-toggle="pill" data-bs-target="#pills-mudfun" type="button" role="tab") Elephant Mud Fun
+            li.nav-item(role="presentation")
+               button.nav-link#pills-breakfast-mudfun-tab(data-bs-toggle="pill" data-bs-target="#pills-breakfast-mudfun" type="button" role="tab") Breakfast + Mud Fun
+            li.nav-item(role="presentation")
+               button.nav-link#pills-expedition-tab(data-bs-toggle="pill" data-bs-target="#pills-expedition" type="button" role="tab") Elephant Expedition
+            li.nav-item(role="presentation")
+               button.nav-link#pills-breakfast-expedition-tab(data-bs-toggle="pill" data-bs-target="#pills-breakfast-expedition" type="button" role="tab") Breakfast + Expedition
+
+          //- Tab Content
+          .tab-content#pills-tabContent
+            
+            //- Night at The Zoo
+            .tab-pane.fade.show.active#pills-night(role="tabpanel")
+               h3.fw-bold.mb-3 Night at The Zoo
+               img.w-100.rounded-2.mb-4(src=`${CWD}assets/img/dest/balizoo/nightatthezoo.jpg` alt="Night at The Zoo")
+               
+               h5.fw-bold.mb-3 Include :
+               ul.list-unstyled.mb-4
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Hotel Return Transfer
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Deer Feeding
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Elephant Feeding
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Guide Night Zoo Tour
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Nocturnal Animal Encounter
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Dinner and Fire Dance Performance
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Insurance
+
+               h5.fw-bold.mb-3 Pick Up Time :
+               ul.list-unstyled
+                 li.mb-1 04.30 PM - 05.00 PM ( Kuta, Seminyak, Nusa Dua, Jimbaran )
+                 li.mb-1 05.00 PM - 05.30 PM ( Sanur and Ubud Area )
+
+            //- Zoo Explorer
+            .tab-pane.fade#pills-explorer(role="tabpanel")
+               h3.fw-bold.mb-3 Zoo Explorer
+               img.w-100.rounded-2.mb-4(src=`${CWD}assets/img/dest/balizoo/zooexplorer.jpg` alt="Zoo Explorer")
+               
+               h5.fw-bold.mb-3 Include :
+               ul.list-unstyled.mb-4
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Hotel Return Transfer
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Zoo Admission
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Jungle Splash Waterplay
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Lunch
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Animal Encounters & Show
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Insurance
+               
+               h5.fw-bold.mb-3 Pick Up Time :
+               ul.list-unstyled.mb-4
+                 li.mb-1 08.30 AM - 09.00 AM
+                 li.mb-1 11.30 AM - 12.00 PM
+               
+               h5.fw-bold.mb-3 Returning From Bali Zoo :
+               ul.list-unstyled
+                 li.mb-1 02.00 PM
+                 li.mb-1 05.00 PM
+
+            //- Zoo Admission
+            .tab-pane.fade#pills-admission(role="tabpanel")
+               h3.fw-bold.mb-3 Zoo Admission
+               img.w-100.rounded-2.mb-4(src=`${CWD}assets/img/dest/balizoo/zooadmission.jpg` alt="Zoo Admission")
+
+               h5.fw-bold.mb-3 Include :
+               ul.list-unstyled
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Jungle Splash Waterplay
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Animal Encounters & Show
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Insurance
+
+            //- Elephant Mud Fun
+            .tab-pane.fade#pills-mudfun(role="tabpanel")
+               h3.fw-bold.mb-3 Elephant Mud Fun
+               img.w-100.rounded-2.mb-4(src=`${CWD}assets/img/dest/balizoo/elephantmudfun.jpg` alt="Elephant Mud Fun")
+
+               h5.fw-bold.mb-3 Include :
+               ul.list-unstyled.mb-4
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Hotel Return Transfer
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Wellcome tea or coffee and snack
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Mud Fun Activity with Elephants
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Lunch
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Feeding the Elephant
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Towel
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Zoo Admission
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Insurance
+
+               h5.fw-bold.mb-3 Pick up :
+               ul.list-unstyled
+                 li.mb-1 <strong>Morning Session :</strong> 07.00 AM ( Kuta, Seminyak, Nusa Dua, Jimbaran ) 07.30 AM ( Sanur,Ubud )
+                 li.mb-1 <strong>Afternoon Session :</strong> 11.00 AM ( Kuta, Seminyak, Nusa Dua, Jimbaran ) 11.30 AM ( Sanur,Ubud )
+
+            //- Breakfast with Orangutan & Elephant Mud Fun
+            .tab-pane.fade#pills-breakfast-mudfun(role="tabpanel")
+               h3.fw-bold.mb-3 Breakfast with Orangutan & Elephant Mud Fun
+               img.w-100.rounded-2.mb-4(src=`${CWD}assets/img/dest/balizoo/elephantmudfun2.jpg` alt="Breakfast with Orangutan & Elephant Mud Fun")
+
+               h5.fw-bold.mb-3 Include :
+               ul.list-unstyled.mb-4
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Hotel Return Transfer
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Breakfast with Orangutan
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Wellcome tea or coffee and snack
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Mud Fun Activity with Elephants
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Lunch
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Feeding the Elephant
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Towel
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Zoo Admission
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Insurance
+
+               h5.fw-bold.mb-3 Pick up :
+               ul.list-unstyled
+                 li.mb-1 06.30 AM ( Kuta, Seminyak, Nusa Dua, Jimbaran )
+                 li.mb-1 07.00 AM ( Sanur, Ubud )
+
+            //- Elephant Expedition
+            .tab-pane.fade#pills-expedition(role="tabpanel")
+               h3.fw-bold.mb-3 Elephant Expedition
+               img.w-100.rounded-2.mb-4(src=`${CWD}assets/img/dest/balizoo/elephantexpedition.jpg` alt="Elephant Expedition")
+
+               h5.fw-bold.mb-3 Include :
+               ul.list-unstyled.mb-4
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Hotel Return Transfer
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Elephant Ride
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Zoo Admission
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Jungle Splash Waterplay
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Lunch
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Animal Encounters & Show
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Insurance
+
+               h5.fw-bold.mb-3 Pick up :
+               ul.list-unstyled.mb-4
+                 li.mb-1 08.30 AM - 09.00 AM
+               
+               h5.fw-bold.mb-3 Returning From Bali Zoo :
+               ul.list-unstyled
+                 li.mb-1 02.00 PM
+
+            //- Breakfast with Orangutan and Elephant Expedition
+            .tab-pane.fade#pills-breakfast-expedition(role="tabpanel")
+               h3.fw-bold.mb-3 Breakfast with Orangutan & Elephant Expedition
+               img.w-100.rounded-2.mb-4(src=`${CWD}assets/img/dest/balizoo/breakfastwithelephantexpedition.jpg` alt="Breakfast with Orangutan & Elephant Expedition")
+
+               h5.fw-bold.mb-3 Include :
+               ul.list-unstyled
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Hotel Return Transfer
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Breakfast with Orangutan
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Elephant Ride
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Zoo Admission
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Jungle Splash Waterplay
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Lunch
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Animal Encounters & Show
+                 li.mb-2 <i class="fas fa-check text-success me-2"></i> Insurance
+
+        
+        //- Sidebar
+        .col-lg-4
+           .mb-5
+              //- Booking Form
+              .card.border-0.shadow.mb-5.bg-warning.bg-opacity-25
+                 .card-header.bg-warning.text-white.text-center.py-3
+                    h5.mb-0.fw-bold Booking Form
+                 .card-body.p-4
+                    form
+                       .mb-3
+                          label.form-label.fw-bold Name
+                          input.form-control#name(type="text")
+                       .mb-3
+                          label.form-label.fw-bold Booking Date
+                          input.form-control#bookingDate(type="date") 
+                       .mb-3
+                          label.form-label.fw-bold Number of People
+                          input.form-control#people(type="number")
+                       .mb-3
+                          label.form-label.fw-bold Hotel & Address
+                          input.form-control#hotel(type="text")
+                       .mb-3
+                          label.form-label.fw-bold Tour Packages
+                          select.form-select#tourPackage
+                             option(value="Night at The Zoo" selected) Night at The Zoo
+                             option(value="Zoo Explorer") Zoo Explorer
+                             option(value="Zoo Admission") Zoo Admission
+                             option(value="Elephant Mud Fun") Elephant Mud Fun
+                             option(value="Breakfast with Orangutan & Elephant Mud Fun") Breakfast with Orangutan & Elephant Mud Fun
+                             option(value="Elephant Expedition") Elephant Expedition
+                             option(value="Breakfast with Orangutan & Elephant Expedition") Breakfast with Orangutan & Elephant Expedition
+                       .mb-3
+                           label.form-label.fw-bold Note ( Optional )
+                           textarea.form-control#note(rows="3")
+                       .mt-3
+                           button.btn.btn-dark.w-100.rounded-pill#btnBooking(type="button") Booking Now
+                          
+              //- Other Tours List
+              .card.border-0.shadow.mb-5
+                 .card-body.p-4
+                    h5.text-warning.fw-bold.mb-4 Full Day Tours
+                    ul.list-unstyled.d-flex.flex-column.gap-3
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="uluwatu-tour.html") Uluwatu Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="gate-of-heaven-tour.html") Gate Of Heaven
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="nusa-penida-tour.html") Nusa Penida One Day Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="bedugul-tour.html") Bedugul Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="kintamani-tour.html") Kintamani Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="sunrise-tour.html") Sunrise Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="ubud-tour-2.html") Ubud Tour 2
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="ubud-tour-1.html") Ubud Tour 1
+              
+              //- Contact Us
+              .card.border-0.shadow
+                 .card-body.p-4
+                    h5.text-warning.fw-bold.mb-4 Contact Us
+                    .d-flex.align-items-center.mb-3
+                       i.fas.fa-phone-alt.text-warning.me-3
+                       span +6289669709690
+                    .d-flex.align-items-center.mb-3
+                       i.fab.fa-whatsapp.text-warning.me-3
+                       span +6289669709690
+                    .d-flex.align-items-center
+                       i.fas.fa-envelope.text-warning.me-3
+                       span agvssetiadiii31@gmail.com
+
+  section.py-6
+    .container
+      .row
+        .col-lg-5.mb-4.mb-lg-0
+          h2.text-warning.fw-bold.display-5.mb-4 Frequently Asked Questions
+          p.text-secondary.mb-4 Find answers to common queries about our tours, bookings, and travel essentials to make your experience seamless and enjoyable.
+          a.btn.btn-warning.text-white.px-4.py-2.rounded-3(href="https://wa.me/6289669709690" target="_blank") Book Appointment 
+            i.fas.fa-arrow-right.ms-2
+        
+        .col-lg-7
+          .accordion#faqAccordion
+            //- Q1
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingOne
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
+                  | Do you offer travel insurance?
+              #collapseOne.accordion-collapse.collapse(aria-labelledby="headingOne" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | We recommend purchasing travel insurance to cover unexpected events. Insurance options are available through our partners or can be arranged independently.
+            
+            //- Q2
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingTwo
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+                  | Are there any age restrictions for your tours?
+              #collapseTwo.accordion-collapse.collapse(aria-labelledby="headingTwo" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | Most tours are suitable for all ages, but some adventure activities may have age or health restrictions. Please check the specific tour details.
+            
+            //- Q3
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingThree
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
+                  | What types of tours do you offer?
+              #collapseThree.accordion-collapse.collapse(aria-labelledby="headingThree" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | We offer a variety of luxury tours including sightseeing, adventure, cultural experiences, and bespoke travel packages tailored to your preferences.
+            
+            //- Q4
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingFour
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
+                  | How do I check the availability of the tour I want?
+              #collapseFour.accordion-collapse.collapse(aria-labelledby="headingFour" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | To check the availability of a tour, please send us an email or message via WhatsApp. Our team will respond promptly and inform you about the availability of the desired tour along with the next steps for booking.
+            
+            //- Q5
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingFive
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive")
+                  | What should I bring on the tour?
+              #collapseFive.accordion-collapse.collapse(aria-labelledby="headingFive" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | We recommend bringing comfortable clothing, travel essentials, and any personal items specific to the activities included in your tour.
+append scripts 
+  script.
+    const btnBooking = document.getElementById('btnBooking');
+    btnBooking.addEventListener('click', () => {
+      const name = document.getElementById('name').value;
+      const bookingDate = document.getElementById('bookingDate').value;
+      const people = document.getElementById('people').value;
+      const hotel = document.getElementById('hotel').value;
+      const tourPackage = document.getElementById('tourPackage').value;
+      const note = document.getElementById('note').value;
+      
+      const message = `Form booking *${tourPackage}*\\n====================\\nName : ${name}\\nBooking Date : ${bookingDate}\\nNumber of People : ${people}\\nHotel : ${hotel}\\nTour Packages : ${tourPackage}\\nNote ( Optional ) : ${note}\\n====================`;
+      
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/6289669709690?text=${encodedMessage}`, '_blank');
+    });

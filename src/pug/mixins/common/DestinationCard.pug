@@ -1,0 +1,12 @@
+mixin DestinationCard(props)
+  .col-md-3.mb-4.destination-item(class=props.category) 
+    .card.overflow-hidden.shadow 
+      img.card-img-top.w-100.destination-img.fit-cover(src=`${CWD}assets/img/dest/${props.img}`, alt=props.place)
+      .card-body.py-4.px-3 
+        .d-flex.flex-column.flex-lg-row.justify-content-between.mb-3 
+          h4.text-secondary.fw-medium
+            a.link-900.text-decoration-none.stretched-link(href=props.link || '#!')= props.place
+          span.fs-1.fw-medium= `$${props.cost}`
+        .d-flex.align-items-center 
+          img(src=`${CWD}assets/img/dest/navigation.svg`, style='margin-right: 14px' width='20' alt="navigation")
+          span.fs-0.fw-medium= props.trip

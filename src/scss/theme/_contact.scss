@@ -1,0 +1,46 @@
+/*-----------------------------------------------
+|   Contact Us
+-----------------------------------------------*/
+
+.contact-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/img/hero/hero-bg.svg'); // Fallback or use a specific image
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0 8rem 0;
+    color: white;
+    text-align: center;
+}
+
+.contact-info-card {
+    padding: 3rem 1.5rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.3s ease;
+    text-align: center;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .icon-wrapper {
+        font-size: 2.5rem;
+        color: #DF6951; // matches theme color
+        margin-bottom: 1.5rem;
+    }
+}
+
+.map-container {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 400px;
+    width: 100%;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}

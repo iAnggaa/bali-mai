@@ -1,0 +1,266 @@
+extends layouts/LayoutTheme
+
+append variables
+  - var CWD = './'
+
+append footerStyles
+  style.
+    .navbar {
+      background-color: #fff !important;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    body {
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/img/dest/ubud2/tirtaempul.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+block content
+  section(style="margin-top: 250px;")
+    .container
+      .row
+        //- Main Content
+        .col-lg-8
+          //- Main Image
+          .mb-5
+             img.w-100.rounded-3(src=`${CWD}assets/img/dest/ubud2.jpeg` alt="Ubud Tour 2")
+          
+          //- Itinerary
+          h1.fw-bold.fs-3.fs-lg-5.mb-3 Ubud Tour 2
+          h5.text-warning.fw-bold.mb-4 Price : USD 55/ Car
+
+          .row.mb-5
+            .col-md-6
+               h5.fw-bold.mb-3 Itinerary :
+               ul.list-unstyled
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | White water rafting
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | ATV ride
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | Tirta empul
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | Gunung kawi temple
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | Kanto lampo waterfall
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | Tibumana waterfall
+            
+            .col-md-6
+               h5.fw-bold.mb-3 Whats Include :
+               ul.list-unstyled
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | English speaking driver
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | Mineral water
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | Charger plug
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | Parking & toll fee
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | Petrol
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | White water rafting
+
+          h3.fw-bold.mb-3 Tour Details :
+          
+          .d-flex.flex-column.gap-5
+            //- Item 1: White water rafting
+            .row
+              .col-12 
+                 h5.fw-bold.text-warning White water rafting
+                 img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/ubud2/whitewaterrafting.jpeg` alt="White water rafting")
+                 p Although there are many rivers in Bali, not all rivers are suitable for rafting trips. There are three river locations in Bali that are ideal for rafting trips. The river is the Ubud Ayung River, the Telaga Waja Karangasem River, and the Klungkung Melangit River. Every stream has pros and cons. However, for this page, we inform you about the arung Ayung river in Ubud Bali for rafting trips.
+            
+            //- Item 2: ATV ride
+            .row
+              .col-12
+                h5.fw-bold.text-warning ATV ride
+                img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/ubud2/atvride.jpg` alt="ATV ride")
+                p TV Ride Bali is an activity that uses four-wheeled motorbikes, usually used for agriculture now for recreation. The wheels are specifically modified for off-road environments, with a 250 cc engine capacity or a 350 cc engine. It is suitable for wet and off road terrain, reliable controls for maneuvering so ATV Ride is a tourist activity to test adrenaline, if you follow instructions and remain careful, ATV rides are guaranteed to be an unforgettable and exciting trip.
+
+            //- Item 3: Tirta empul
+            .row
+              .col-12
+                h5.fw-bold.text-warning Tirta empul
+                img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/ubud2/tirtaempul.jpg` alt="Tirta empul")
+                p Tirta Empul, meaning ‘holy water spring’ is actually the name of a water source located within the temple. The spring feeds various purification baths, pools and fish ponds surrounding the outer perimeter, which all flow to the Tukad Pakerisan River. Various sites throughout the region and many other archaeological relics relate to local myths and legends.
+            
+            //- Item 4: Gunung kawi temple
+            .row
+              .col-12
+                h5.fw-bold.text-warning Gunung kawi temple
+                img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/ubud2/gunungkawitemple.jpg` alt="Gunung kawi temple")
+                p Gunung Kawi Temple complex, locally referred to as Pura Gunung Kawi, is one of Bali’s most unique archaeological sites, comprising a collection of ancient shrine reliefs carved into the face of a rock cliff. The main site overlooks the sacred Pakerisan River, which also flows by the Tirta Empul Temple a kilometre up north. Across the river from the ancient reliefs is a temple courtyard featuring old Hindu shrines in a more contemporary architectural style, which is attended by pilgrims especially during its ‘piodalan’ temple anniversaries.
+            
+            //- Item 5: Kanto lampo waterfall
+            .row
+              .col-12
+                 h5.fw-bold.text-warning Kanto lampo waterfall
+                 img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/ubud2/kantolampowaterfall.jpg` alt="Kanto lampo waterfall")
+                 p When you are bored with the views of the beaches in Bali, visiting a waterfall in the Gianyar region, the Kanto Lampo Waterfall is an interesting choice. Unlike the location of a waterfall that is usually located in the mountains or highlands, Kanto Lampo Gianyar Waterfall is even in the lowlands and has a hot temperature during the day.
+            
+            //- Item 6: Tibumana waterfall
+            .row
+              .col-12
+                 h5.fw-bold.text-warning Tibumana waterfall
+                 img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/ubud2/tibumanawaterfall.jpeg` alt="Tibumana waterfall")
+                 p You will never get bored of traveling to Bali. In addition to the beach, there are alternative tourist attractions that are not less beautiful to visit. Like Tibumana Waterfall, whose natural beauty is also able to attract tourists to come. This waterfall is unique because of its shape like a twin waterfall.Tibumana Waterfall is a twin waterfall with 2 adjacent water streams. But when the river water above it is small, there is only one large stream that drops into a waterfall. Under the waterfall there is a pool of water that is not too deep so it is very comfortable if used for swimming or bathing. The manager has also prepared tires that can be used as buoys.
+        
+        //- Sidebar
+        .col-lg-4
+           .mb-5
+              //- Booking Form
+              .card.border-0.shadow.mb-5.bg-warning.bg-opacity-25
+                 .card-header.bg-warning.text-white.text-center.py-3
+                    h5.mb-0.fw-bold Booking Form
+                 .card-body.p-4
+                    form
+                       .mb-3
+                          label.form-label.fw-bold Name
+                          input.form-control#name(type="text")
+                       .mb-3
+                          label.form-label.fw-bold Booking Date
+                          input.form-control#bookingDate(type="date") 
+                       .mb-3
+                          label.form-label.fw-bold Number of People
+                          input.form-control#people(type="number")
+                       .mb-3
+                          label.form-label.fw-bold Hotel & Address
+                          input.form-control#hotel(type="text")
+                       .mb-3
+                          label.form-label.fw-bold Tour Packages
+                          input.form-control#tourPackage(type="text" value="Ubud Tour 2" readonly)
+                       .mb-3
+                           label.form-label.fw-bold Note ( Optional )
+                           textarea.form-control#note(rows="3")
+                       .mt-3
+                           button.btn.btn-dark.w-100.rounded-pill#btnBooking(type="button") Booking Now
+                          
+              //- Other Tours List
+              .card.border-0.shadow.mb-5
+                 .card-body.p-4
+                    h5.text-warning.fw-bold.mb-4 Full Day Tours
+                    ul.list-unstyled.d-flex.flex-column.gap-3
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="uluwatu-tour.html") Uluwatu Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="gate-of-heaven-tour.html") Gate Of Heaven
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="nusa-penida-tour.html") Nusa Penida One Day Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="bedugul-tour.html") Bedugul Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="kintamani-tour.html") Kintamani Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="sunrise-tour.html") Sunrise Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="ubud-tour-2.html") Ubud Tour 2
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="ubud-tour-1.html") Ubud Tour 1
+              
+              //- Contact Us
+              .card.border-0.shadow
+                 .card-body.p-4
+                    h5.text-warning.fw-bold.mb-4 Contact Us
+                    .d-flex.align-items-center.mb-3
+                       i.fas.fa-phone-alt.text-warning.me-3
+                       span +6289669709690
+                    .d-flex.align-items-center.mb-3
+                       i.fab.fa-whatsapp.text-warning.me-3
+                       span +6289669709690
+                    .d-flex.align-items-center
+                       i.fas.fa-envelope.text-warning.me-3
+                       span agvssetiadiii31@gmail.com
+
+  section.py-6
+    .container
+      .row
+        .col-lg-5.mb-4.mb-lg-0
+          h2.text-warning.fw-bold.display-5.mb-4 Frequently Asked Questions
+          p.text-secondary.mb-4 Find answers to common queries about our tours, bookings, and travel essentials to make your experience seamless and enjoyable.
+          a.btn.btn-warning.text-white.px-4.py-2.rounded-3(href="https://wa.me/6289669709690" target="_blank") Book Appointment 
+            i.fas.fa-arrow-right.ms-2
+        
+        .col-lg-7
+          .accordion#faqAccordion
+            //- Q1
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingOne
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
+                  | Do you offer travel insurance?
+              #collapseOne.accordion-collapse.collapse(aria-labelledby="headingOne" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | We recommend purchasing travel insurance to cover unexpected events. Insurance options are available through our partners or can be arranged independently.
+            
+            //- Q2
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingTwo
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+                  | Are there any age restrictions for your tours?
+              #collapseTwo.accordion-collapse.collapse(aria-labelledby="headingTwo" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | Most tours are suitable for all ages, but some adventure activities may have age or health restrictions. Please check the specific tour details.
+            
+            //- Q3
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingThree
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
+                  | What types of tours do you offer?
+              #collapseThree.accordion-collapse.collapse(aria-labelledby="headingThree" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | We offer a variety of luxury tours including sightseeing, adventure, cultural experiences, and bespoke travel packages tailored to your preferences.
+            
+            //- Q4
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingFour
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
+                  | How do I check the availability of the tour I want?
+              #collapseFour.accordion-collapse.collapse(aria-labelledby="headingFour" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | To check the availability of a tour, please send us an email or message via WhatsApp. Our team will respond promptly and inform you about the availability of the desired tour along with the next steps for booking.
+            
+            //- Q5
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingFive
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive")
+                  | What should I bring on the tour?
+              #collapseFive.accordion-collapse.collapse(aria-labelledby="headingFive" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | We recommend bringing comfortable clothing, travel essentials, and any personal items specific to the activities included in your tour.
+
+append scripts 
+  script.
+    const btnBooking = document.getElementById('btnBooking');
+    btnBooking.addEventListener('click', () => {
+      const name = document.getElementById('name').value;
+      const bookingDate = document.getElementById('bookingDate').value;
+      const people = document.getElementById('people').value;
+      const hotel = document.getElementById('hotel').value;
+      const tourPackage = document.getElementById('tourPackage').value;
+      const note = document.getElementById('note').value;
+      
+      const message = `Form booking *${tourPackage}*\n====================\nName : ${name}\nBooking Date : ${bookingDate}\nNumber of People : ${people}\nHotel : ${hotel}\nTour Packages : ${tourPackage}\nNote ( Optional ) : ${note}\n====================`;
+      
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/6289669709690?text=${encodedMessage}`, '_blank');
+    });

@@ -1,0 +1,256 @@
+extends layouts/LayoutTheme
+
+append variables
+  - var CWD = './'
+
+append footerStyles
+  style.
+    .navbar {
+      background-color: #fff !important;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    body {
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/img/dest/kintamani/mountbatur.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+block content
+  section(style="margin-top: 250px;")
+    .container
+      .row
+        //- Main Content
+        .col-lg-8
+          //- Main Image
+          .mb-5
+             img.w-100.rounded-3(src=`${CWD}assets/img/dest/kintamani/mountbatur.jpeg` alt="Kintamani Tour")
+          
+          //- Header & Summary
+          h1.fw-bold.fs-3.fs-lg-5.mb-3 Kintamani Tour
+          h5.text-warning.fw-bold.mb-4 Price : USD 75/ Car
+
+          .row.mb-5
+            .col-md-6
+               h5.fw-bold.mb-3 Itinerary :
+               ul.list-unstyled
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | Tirta ampul holy water
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | Art village ( batik, silver, wood carving )
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | Mount batur volcano
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | Coffee plantation
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-circle.text-warning.me-3.small(style="font-size: 8px;")
+                   | Tukad Cepung
+            
+            .col-md-6
+               h5.fw-bold.mb-3 Whats Include :
+               ul.list-unstyled
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | English speaking driver
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | Mineral water
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | Charger plug
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | Parking & toll fee
+                 li.d-flex.align-items-center.mb-2
+                   i.fas.fa-check.text-success.me-3
+                   | Petrol
+
+          h3.fw-bold.mb-3 Tour Details :
+          
+          .d-flex.flex-column.gap-5
+            //- Item 1: Tirta Empul
+            .row
+              .col-12 
+                 h5.fw-bold.text-warning Tirta Empul Temple (Holy Spring Temple)
+                 img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/kintamani/tirtaempultemple.jpeg` alt="Tirta Empul Temple")
+                 p Tirta Empul temple also known as the Holy Spring Temple located in Tampak Siring, for more thousand years the Balinese worshippers has been come to this temple for having the holy water to purified the body from Bad luck, local people believe if the water in this temple has power to clean body from negative things. a myth described if this sacred spring temple is build by God of Indra give to the dead warriors which been killed by Arrogant king Maya Denawa, the dead warrior come alive after sprang the water from this holy spring temple.
+            
+            //- Item 2: Art Village
+            .row
+              .col-12
+                h5.fw-bold.text-warning Art village ( batik, silver, wood carving )
+                .d-flex.gap-3.flex-wrap.my-3
+                    img.rounded-2(src=`${CWD}assets/img/dest/ubud1/batikubud.jpg` width="200" alt="Batik")
+                    img.rounded-2(src=`${CWD}assets/img/dest/ubud1/silverubud.jpg` width="200" alt="Silver")
+                    img.rounded-2(src=`${CWD}assets/img/dest/ubud1/woodcarving.jpg` width="200" alt="Wood Carving")
+                p Ubud is a town on the Indonesian island of Bali in Ubud District, located amongst rice paddies and steep ravines in the central foothills of the Gianyar regency. One of Bali's major arts and culture centres, it has developed a large tourism industry. Ubud is being one of the famous village most visited in Bali islands due this village offered with many kind beautiful art, myth, and history. Is perfect tourist destination for those who love with Art and Culture history.
+
+            //- Item 3: Mount Batur
+            .row
+              .col-12
+                h5.fw-bold.text-warning Mount Batur Volcano
+                img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/kintamani/mountbatur.jpeg` alt="Mount Batur Volcano")
+                p Kintamani Village is the object of mountain tourism is very unique and stunning, with cool air condition in the daytime and cold at night. Kintamani is 1500 meters high, the village of Kintamani his a cool, damp climate suited to growing oranges and passion fruit and on market day, which falls every third day, the main street becomes a bustling chaos of vendors, some of whom have traveled from far away. Tourism Object is located in the area is located in the village of Batur. We can watch stunning natural scenery of Penelokan, a combination of Mount Batur and the expanse of black rock with Lake Batur and on a blue caldera.
+            
+            //- Item 4: Coffee Plantation
+            .row
+              .col-12
+                h5.fw-bold.text-warning Coffee Plantation or Bali Agrotourism
+                img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/kintamani/coffeeplantation.jpg` alt="Coffee Plantation")
+                p Coffee Plantation or Bali Agrotourism is coffe farm where you can see varius of coffe planation and see the making of the famous animal coffe or known as a coffe luwak. in this place you can see various of plantation such as coffee arabica, coffee robusta, pineapple, balinesse snake fruit, and etc. expereince to see how to make Balinesse coffee, try the best of balinesse coffe or ginger tea with green view river valley. They sell variety of theirs original Balinese coffee products, herb oil and etc and see the civet cat the most expensive coffee maker, wellknown as Luwak, its produce "Coffee Luwak" and the process of the bean passing through the digestive tract of the civet chemically alters the proteins in the Luwak coffee bean to yield more complex and smooth flavors, not found in conventional coffees.
+            
+            //- Item 5: Tukad Cepung
+            .row
+              .col-12
+                h5.fw-bold.text-warning Tukad Cepung
+                img.w-50.rounded-2.my-3(src=`${CWD}assets/img/dest/kintamani/tukadcepung.webp` alt="Tukad Cepung")
+                p Tukad Cepung Waterfall still remains as the best virgin waterfall of Bali. The fact that this spot is not known to a lot of people and still not under the commercial tourist spots, you are not under any obligations to pay anything to enter area. However, since the area is well-maintained by the local villagers and some of them contribute in showing and/or explaining the waterfall to the visitors, it would be kind if you gave a tip so they can continue to maintain this hidden spot.
+
+        //- Sidebar
+        .col-lg-4
+           .mb-5
+              //- Booking Form
+              .card.border-0.shadow.mb-5.bg-warning.bg-opacity-25
+                 .card-header.bg-warning.text-white.text-center.py-3
+                    h5.mb-0.fw-bold Booking Form
+                 .card-body.p-4
+                    form
+                       .mb-3
+                          label.form-label.fw-bold Name
+                          input.form-control#name(type="text")
+                       .mb-3
+                          label.form-label.fw-bold Booking Date
+                          input.form-control#bookingDate(type="date") 
+                       .mb-3
+                          label.form-label.fw-bold Number of People
+                          input.form-control#people(type="number")
+                       .mb-3
+                          label.form-label.fw-bold Hotel & Address
+                          input.form-control#hotel(type="text")
+                       .mb-3
+                          label.form-label.fw-bold Tour Packages
+                          input.form-control#tourPackage(type="text" value="Kintamani Tour" readonly)
+                       .mb-3
+                           label.form-label.fw-bold Note ( Optional )
+                           textarea.form-control#note(rows="3")
+                       .mt-3
+                           button.btn.btn-dark.w-100.rounded-pill#btnBooking(type="button") Booking Now
+                          
+              //- Other Tours List
+              .card.border-0.shadow.mb-5
+                 .card-body.p-4
+                    h5.text-warning.fw-bold.mb-4 Full Day Tours
+                    ul.list-unstyled.d-flex.flex-column.gap-3
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="uluwatu-tour.html") Uluwatu Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="gate-of-heaven-tour.html") Gate Of Heaven
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="nusa-penida-tour.html") Nusa Penida One Day Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="bedugul-tour.html") Bedugul Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="kintamani-tour.html") Kintamani Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="sunrise-tour.html") Sunrise Tour
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="ubud-tour-2.html") Ubud Tour 2
+                       li 
+                          i.fas.fa-arrow-right.text-warning.me-2
+                          a.text-decoration-none.text-secondary(href="ubud-tour-1.html") Ubud Tour 1
+              
+              //- Contact Us
+              .card.border-0.shadow
+                 .card-body.p-4
+                    h5.text-warning.fw-bold.mb-4 Contact Us
+                    .d-flex.align-items-center.mb-3
+                       i.fas.fa-phone-alt.text-warning.me-3
+                       span +6289669709690
+                    .d-flex.align-items-center.mb-3
+                       i.fab.fa-whatsapp.text-warning.me-3
+                       span +6289669709690
+                    .d-flex.align-items-center
+                       i.fas.fa-envelope.text-warning.me-3
+                       span agvssetiadiii31@gmail.com
+
+  section.py-6
+    .container
+      .row
+        .col-lg-5.mb-4.mb-lg-0
+          h2.text-warning.fw-bold.display-5.mb-4 Frequently Asked Questions
+          p.text-secondary.mb-4 Find answers to common queries about our tours, bookings, and travel essentials to make your experience seamless and enjoyable.
+          a.btn.btn-warning.text-white.px-4.py-2.rounded-3(href="https://wa.me/6289669709690" target="_blank") Book Appointment 
+            i.fas.fa-arrow-right.ms-2
+        
+        .col-lg-7
+          .accordion#faqAccordion
+            //- Q1
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingOne
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
+                  | Do you offer travel insurance?
+              #collapseOne.accordion-collapse.collapse(aria-labelledby="headingOne" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | We recommend purchasing travel insurance to cover unexpected events. Insurance options are available through our partners or can be arranged independently.
+            
+            //- Q2
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingTwo
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+                  | Are there any age restrictions for your tours?
+              #collapseTwo.accordion-collapse.collapse(aria-labelledby="headingTwo" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | Most tours are suitable for all ages, but some adventure activities may have age or health restrictions. Please check the specific tour details.
+            
+            //- Q3
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingThree
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
+                  | What types of tours do you offer?
+              #collapseThree.accordion-collapse.collapse(aria-labelledby="headingThree" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | We offer a variety of luxury tours including sightseeing, adventure, cultural experiences, and bespoke travel packages tailored to your preferences.
+            
+            //- Q4
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingFour
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
+                  | How do I check the availability of the tour I want?
+              #collapseFour.accordion-collapse.collapse(aria-labelledby="headingFour" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | To check the availability of a tour, please send us an email or message via WhatsApp. Our team will respond promptly and inform you about the availability of the desired tour along with the next steps for booking.
+            
+            //- Q5
+            .accordion-item.border.mb-3.shadow-sm.rounded-3.overflow-hidden
+              h2.accordion-header#headingFive
+                button.accordion-button.collapsed.bg-white.text-dark.fw-bold(type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive")
+                  | What should I bring on the tour?
+              #collapseFive.accordion-collapse.collapse(aria-labelledby="headingFive" data-bs-parent="#faqAccordion")
+                .accordion-body.text-secondary
+                  | We recommend bringing comfortable clothing, travel essentials, and any personal items specific to the activities included in your tour.
+
+append scripts 
+  script.
+    const btnBooking = document.getElementById('btnBooking');
+    btnBooking.addEventListener('click', () => {
+      const name = document.getElementById('name').value;
+      const bookingDate = document.getElementById('bookingDate').value;
+      const people = document.getElementById('people').value;
+      const hotel = document.getElementById('hotel').value;
+      const tourPackage = document.getElementById('tourPackage').value;
+      const note = document.getElementById('note').value;
+      
+      const message = `Form booking *${tourPackage}*\n====================\nName : ${name}\nBooking Date : ${bookingDate}\nNumber of People : ${people}\nHotel : ${hotel}\nTour Packages : ${tourPackage}\nNote ( Optional ) : ${note}\n====================`;
+      
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/6289669709690?text=${encodedMessage}`, '_blank');
+    });

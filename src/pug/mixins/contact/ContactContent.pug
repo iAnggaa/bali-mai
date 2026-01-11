@@ -1,0 +1,40 @@
+mixin ContactContent
+  section.contact-header.mb-6
+    .container
+      h1.fw-bold.display-4.text-white CONTACT US
+      p.text-white.fs-1 Home - Contact Us
+
+  section.container.mb-6
+    .row.g-4.mb-5
+      .col-md-4
+        .contact-info-card
+          .icon-wrapper
+            i.fas.fa-map-marker-alt
+          h4.fw-bold.mb-3 Our Address
+          p.text-secondary.mb-0 Jl. Tukad Balian No.126, Renon,
+          p.text-secondary Denpasar Selatan, Kota Denpasar, Bali 80225
+      
+      .col-md-4
+        .contact-info-card
+          .icon-wrapper
+            i.fas.fa-mobile-alt
+          h4.fw-bold.mb-3 Phone & Email
+          p.text-secondary.mb-1 +6289669709690
+          p.text-secondary agvssetiadiii31@gmail.com
+      
+      .col-md-4
+        .contact-info-card
+          .icon-wrapper
+            i.fas.fa-share-alt
+          h4.fw-bold.mb-3 Stay In Touch
+          p.text-secondary.mb-3 Follow us on Social Media
+          div
+            a(href="#").text-secondary.fs-2.me-3
+              i.fab.fa-instagram
+            a(href="#").text-secondary.fs-2
+              i.fab.fa-whatsapp
+
+    .row
+      .col-12
+        .map-container
+           iframe(src="https://maps.google.com/maps?q=-8.6832676,115.241946&z=17&output=embed" allowfullscreen="" loading="lazy")

@@ -1,0 +1,9 @@
+extends layouts/LayoutTheme
+include mixins/common/Footer
+include mixins/contact/ContactContent
+
+prepend scripts
+  
+append content
+  +ContactContent
+  +Footer

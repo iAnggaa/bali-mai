@@ -1,0 +1,44 @@
+append variables
+  -
+    var galleryImages = [
+      `${CWD}assets/img/galery/gallery-1.jpeg`,
+      `${CWD}assets/img/galery/gallery-2.jpeg`,
+      `${CWD}assets/img/galery/gallery-3.jpeg`,
+      `${CWD}assets/img/galery/gallery-4.jpeg`,
+      `${CWD}assets/img/galery/gallery-5.jpeg`,
+      `${CWD}assets/img/galery/gallery-6.jpeg`,
+      `${CWD}assets/img/galery/gallery-7.jpeg`,
+      `${CWD}assets/img/galery/gallery-8.jpeg`,
+      `${CWD}assets/img/galery/gallery-9.jpeg`,
+      `${CWD}assets/img/galery/gallery-10.jpeg`,
+      `${CWD}assets/img/galery/gallery-11.jpeg`,
+      `${CWD}assets/img/galery/gallery-12.jpeg`,
+      `${CWD}assets/img/galery/gallery-13.jpeg`,
+      `${CWD}assets/img/galery/gallery-14.jpeg`,
+      `${CWD}assets/img/galery/gallery-15.jpeg`,
+      `${CWD}assets/img/galery/gallery-16.jpeg`,
+      `${CWD}assets/img/galery/gallery-17.jpeg`,
+      `${CWD}assets/img/galery/gallery-18.jpeg`,
+      `${CWD}assets/img/galery/gallery-19.jpeg`,
+      `${CWD}assets/img/galery/gallery-20.jpeg`,
+      `${CWD}assets/img/galery/gallery-21.jpeg`,
+      `${CWD}assets/img/galery/gallery-22.jpeg`,
+      `${CWD}assets/img/galery/gallery-23.jpeg`
+    ]
+
+mixin Gallery
+  +Section.pt-5#gallery
+    .row.mb-5
+      .col-lg-6.mx-auto.text-center
+        h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Our Gallery
+        p.mb-0 Check out some of the most beautiful moments captured by our travelers from around the globe.
+
+    .row.g-3#gallery-container
+      each img, index in galleryImages
+        .col-md-4.col-6(class=`${index >= 6 ? 'd-none gallery-hidden' : ''}`)
+          .gallery-item
+            img(src=img, alt='Gallery Image ' + (index + 1))
+    
+    .text-center.mt-5
+      button.btn.btn-outline-danger#loadMoreBtn Load More
+      button.btn.btn-outline-danger.d-none#showLessBtn Show Less
