@@ -18931,6 +18931,10 @@ iframe {
   height: 18.75rem;
   -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 .destination-item {
@@ -18952,11 +18956,16 @@ iframe {
   transition: all 0.3s ease-in-out;
 }
 .destination-item:hover .card {
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
-  -webkit-box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2) !important;
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2) !important;
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  transform: translateY(-8px);
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+.destination-item:hover .card .destination-img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .input-group-icon {
